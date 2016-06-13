@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WZKeyboardViewController">
+            <connections>
+                <outlet property="address_textField" destination="oMs-iD-jHK" id="Llv-iR-Pwj"/>
+                <outlet property="email_textField" destination="xO4-Du-opD" id="48W-7O-bPm"/>
+                <outlet property="name_textField" destination="DYP-1Q-vKK" id="Xmo-AN-4SZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz5-wQ-9H8">
+                    <rect key="frame" x="20" y="64" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="FXd-6O-UOh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="OcY-bj-Jhe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="OcY-bj-Jhe"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYP-1Q-vKK">
+                    <rect key="frame" x="80" y="60" width="500" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ltl-Fu-Mwh"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-az-pst">
+                    <rect key="frame" x="20" y="125" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="aXp-1l-5E1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xO4-Du-opD">
+                    <rect key="frame" x="80" y="120" width="500" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="To4-Zl-lNf"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwt-8i-cV1">
+                    <rect key="frame" x="20" y="186" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="ZDU-vj-6v5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMs-iD-jHK">
+                    <rect key="frame" x="80" y="181" width="500" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="31K-hZ-zPQ"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oMs-iD-jHK" firstAttribute="leading" secondItem="Mwt-8i-cV1" secondAttribute="trailing" constant="10" id="1df-1l-RiV"/>
+                <constraint firstItem="Mwt-8i-cV1" firstAttribute="top" secondItem="oB1-az-pst" secondAttribute="top" id="3zc-QL-ExQ"/>
+                <constraint firstItem="oB1-az-pst" firstAttribute="leading" secondItem="Yz5-wQ-9H8" secondAttribute="leading" id="5Nt-SD-RJb"/>
+                <constraint firstAttribute="trailing" secondItem="DYP-1Q-vKK" secondAttribute="trailing" constant="20" id="7on-3x-Zq8"/>
+                <constraint firstItem="Yz5-wQ-9H8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="C7t-G7-yJw"/>
+                <constraint firstItem="Yz5-wQ-9H8" firstAttribute="centerY" secondItem="DYP-1Q-vKK" secondAttribute="centerY" id="GNr-Lu-ZKa"/>
+                <constraint firstItem="DYP-1Q-vKK" firstAttribute="leading" secondItem="Yz5-wQ-9H8" secondAttribute="trailing" constant="10" id="ISj-Xc-V87"/>
+                <constraint firstItem="oB1-az-pst" firstAttribute="centerY" secondItem="xO4-Du-opD" secondAttribute="centerY" id="JDh-fG-5cp"/>
+                <constraint firstItem="oB1-az-pst" firstAttribute="top" secondItem="Yz5-wQ-9H8" secondAttribute="bottom" constant="40" id="JP9-8z-1B4"/>
+                <constraint firstItem="oMs-iD-jHK" firstAttribute="trailing" secondItem="xO4-Du-opD" secondAttribute="trailing" id="MT6-OM-Hdg"/>
+                <constraint firstItem="xO4-Du-opD" firstAttribute="trailing" secondItem="DYP-1Q-vKK" secondAttribute="trailing" id="S9C-hR-pC8"/>
+                <constraint firstItem="Yz5-wQ-9H8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="XPG-F0-sox"/>
+                <constraint firstItem="Mwt-8i-cV1" firstAttribute="top" secondItem="oB1-az-pst" secondAttribute="bottom" constant="144" id="aE4-aw-CF0"/>
+                <constraint firstItem="xO4-Du-opD" firstAttribute="leading" secondItem="oB1-az-pst" secondAttribute="trailing" constant="10" id="fFU-kB-glR"/>
+                <constraint firstItem="Mwt-8i-cV1" firstAttribute="centerY" secondItem="oMs-iD-jHK" secondAttribute="centerY" id="kKs-yZ-AGk"/>
+                <constraint firstItem="Mwt-8i-cV1" firstAttribute="leading" secondItem="oB1-az-pst" secondAttribute="leading" id="qPJ-v6-eVB"/>
+                <constraint firstItem="Mwt-8i-cV1" firstAttribute="top" secondItem="oB1-az-pst" secondAttribute="bottom" constant="40" id="vUJ-u2-RTG"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3zc-QL-ExQ"/>
+                    <exclude reference="aE4-aw-CF0"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
